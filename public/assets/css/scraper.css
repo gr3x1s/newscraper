@@ -1,0 +1,199 @@
+
+body {
+    padding-top: 100px;
+}
+
+.brand-img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("/assets/img/scraper-yellow.png") no-repeat;
+}
+
+.brand-img:hover {
+    background: url("/assets/img/scraper-green.png") no-repeat;
+}
+
+.navbar-sitetitle {
+    color: hsl(120, 100%, 50%) !important;
+}
+
+.origin {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+ul.nav li a, ul.nav li a:visited {
+    color: #00FFFF !important;
+}
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #00FF00 !important;
+}
+
+ul.nav li.active a {
+    color: #FFFF00 !important;
+}
+
+.hidden-input {
+    display: none;
+}
+
+ul.nav li form button {
+    color: #00FFFF !important;
+}
+
+ul.nav li form button:hover, ul.nav li form button:active {
+    color: #00FF00 !important;
+}
+
+.clear {
+    font-style: normal;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pointer:hover {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+.block-centered{
+    margin: 0 auto;
+    float: none;
+}
+
+
+.element-hide {
+    display: none;
+    visibility: hidden;
+}
+
+.element-show {
+    display: block;
+    visibility: visible;
+}
+
+
+.fixed-row {
+    background-color: #ddd;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+.dynamic-msg {
+    font-weight: bold;
+}
+
+.error-msg {
+    color: red;
+    font-style: none;
+}
+
+.default-msg {
+    color: black;
+    font-style: none;
+}
+
+.wait-msg {
+    color: blue;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.info-msg {
+    font-weight: bolder;
+}
+
+.info-msg-small {
+    font-size: small;
+    font-weight: bolder;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.demo-body {
+    margin-top: 125px;
+}
+
+.demo-section {
+    margin: 10px;
+}
+
+.side-pad {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.form-field {
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-submit {
+    position: relative;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.modal-dialog {
+    max-height: 80vh;
+}
+
+.modal-image {
+    width: 128px;
+    height: 128px;
+}
+
+
+.xtooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.xtooltip .xtooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #E5E5E5;
+    color: #000000;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+
+    transition: opacity 1s;
+}
+
+.xtooltip .xtooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.xtooltip:hover .xtooltiptext {
+    visibility: visible;
+    opacity: 1;
+    z-index: 2147483647;
+}
